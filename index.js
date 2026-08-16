@@ -78,3 +78,20 @@ console.log("Does set_number have 30?", set_numbers.has(30));
 //Display all value in the console using forEach
 set_numbers.forEach(num => console.log(num));
 
+
+
+
+/*-------------------------------
+Task 6 — Map
+---------------------------------*/
+let map_student = new Map();
+
+//Add a property to Map using set()
+map_student.set('name', 'Rahim');
+map_student.set('age', 22);
+
+//get the name property to Map using get()
+console.log(map_student.get('name'));
+
+//Get the total length of map_student using size
+console.log(map_student.size);
