@@ -10,6 +10,9 @@ fruits.pop();
 //Display all fruits in the console using forEach;
 const fruit = fruits.forEach(fruit => console.log(fruit));
 
+
+
+
 /*-------------------------------
 Task 2 — map() & filter()
 ---------------------------------*/
@@ -21,6 +24,8 @@ console.log(addNumber);
 // Use filter() to get numbers greater than 30 from the array
 let greaterThen30 = numbers.filter(num => num > 30);
 console.log(greaterThen30);
+
+
 
 /*-------------------------------
 Task 3 — reduce(), find(), findIndex()
@@ -39,6 +44,9 @@ console.log('First mark greater then 70:', firstAbove70);
 let indexOf85 = marks.findIndex(mark => mark === 85);
 console.log('index of 85 is', indexOf85);
 
+
+
+
 /*-------------------------------
 Task 4 — Object Methods
 ---------------------------------*/
@@ -56,6 +64,9 @@ console.log(
   student.hasOwnProperty('name'),
 );
 
+
+
+
 /*-------------------------------
 Task 5 — Set
 ---------------------------------*/
@@ -72,6 +83,9 @@ console.log('Does set_number have 30?', set_numbers.has(30));
 //Display all value in the console using forEach
 set_numbers.forEach(num => console.log(num));
 
+
+
+
 /*-------------------------------
 Task 6 — Map
 ---------------------------------*/
@@ -85,7 +99,11 @@ map_student.set('age', 22);
 console.log(map_student.get('name'));
 
 //Get the total length of map_student using size
-console.log(map_student.size);
+console.log('map_student lenght size is', map_student.size);
+
+
+
+
 
 /*-------------------------------
 Task 7 — Spread & Rest
@@ -106,3 +124,23 @@ function sum(...rest) {
   return sum;
 }
 console.log("Total sum is:", sum(10, 20, 30));
+
+
+/*-------------------------------
+Task 8 — Class & Constructor
+---------------------------------*/
+// Create a Class Object
+class Student {
+  constructor (name, age, course) {
+    this.name = name;
+    this.age = age;
+    this.course = course;
+  }
+}
+
+
+let student1 = new Student("Rahim", 22, "JavaScript");
+let student2 = new Student("Karim", 23, "React");
+
+console.log(student1);
+console.log(student2);
