@@ -58,3 +58,23 @@ console.log("keys:", Object.keys(student));
 console.log("Values:", Object.values(student));
 console.log("Entries:", Object.entries(student));
 console.log("Does student have 'name' property?:", student.hasOwnProperty("name"));
+
+
+
+
+/*-------------------------------
+Task 5 — Set
+---------------------------------*/
+let set_numbers = new Set([10, 20, 30]);
+
+//Add number in set using add() mathod
+set_numbers.add(40);
+
+//Delete number in set using delete() mathod
+set_numbers.delete(20);
+
+console.log("Does set_number have 30?", set_numbers.has(30));
+
+//Display all value in the console using forEach
+set_numbers.forEach(num => console.log(num));
+
