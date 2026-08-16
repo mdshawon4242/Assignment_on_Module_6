@@ -42,3 +42,19 @@ console.log("First mark greater then 70:", firstAbove70)
 let indexOf85 = marks.findIndex(mark => mark === 85);
 console.log('index of 85 is', indexOf85);
 
+
+
+
+/*-------------------------------
+Task 4 — Object Methods
+---------------------------------*/
+let student = {
+  name: 'Rahim',
+  age: 22,
+  city: 'Chittagong',
+};
+
+console.log("keys:", Object.keys(student));
+console.log("Values:", Object.values(student));
+console.log("Entries:", Object.entries(student));
+console.log("Does student have 'name' property?:", student.hasOwnProperty("name"));
